@@ -1,23 +1,18 @@
-package org.rperezv.springcloud.msvc.usuarios.models.entity;
+package org.rperezv.springcloud.msvc.cursos.entity;
 
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
 @Entity
-@Table(name="usuarios")
+@Table(name = "cursos")
 @Getter
 @Setter
-public class Usuario {
+public class Curso {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String nombre;
-
-    @Column(unique = true)
-    private String email;
-
-    private String password;
 }
